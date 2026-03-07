@@ -27,6 +27,63 @@ variable "public_subnet_cidr" {
 
 
 variable "public_subnet_tags" {
+  type = map 
   default = {}
 }
+
+variable "private_subnet_cidr" {
+  type = list 
+  default = ["10.0.11.0/24" , "10.0.12.0/24"]
+}
+
+variable "private_subnet_tags" {
+  type = map 
+  default = {}
+}
+
+variable "database_subnet_cidr" {
+  type = list 
+  default = ["10.0.21.0/24" , "10.0.22.0/24"]
+}
+
+variable "database_subnet_tags" {
+  type = map 
+  default = {}
+}
+
+variable "public_rt" {
+  type = map 
+  default = {}
+}
+
+variable "private_rt" {
+  type = map 
+  default = {}
+}
+
+variable "database_rt" {
+  type = map 
+  default = {}
+}
+
+variable "eip_tags" {
+  type = map 
+  default = {}
+}
+
+variable "nat_tags" {
+  type = map 
+  default = {}
+}
+
+# variable "private_nat_tags" {
+#   type = map 
+#   default = {}
+# }
+
+# variable "database_nat_tags" {
+#   type = map 
+#   default = {}
+# }
+
 
