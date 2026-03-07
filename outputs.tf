@@ -3,5 +3,5 @@ output "azs_info" {
 }
 
 output "aws_vpc_peering_connection" {
-  value = aws_vpc_peering_connection.default.id
+  value = aws_vpc_peering_connection.default[count.index].id
 }
