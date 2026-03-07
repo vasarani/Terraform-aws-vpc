@@ -76,14 +76,8 @@ variable "nat_tags" {
   default = {}
 }
 
-# variable "private_nat_tags" {
-#   type = map 
-#   default = {}
-# }
-
-# variable "database_nat_tags" {
-#   type = map 
-#   default = {}
-# }
-
+variable "is_peering_required" {
+  default = false
+  type = bool
+}
 
